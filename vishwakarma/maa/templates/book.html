@@ -1,0 +1,25 @@
+{% load static %}
+      <link rel="stylesheet" type="text/css" href="{% static '/css/book.css' %}">
+
+<div class="login-page">
+  <div class="form">
+    <h3> Vishwakarma Arts <div> Booking form...</div></h3>
+
+ <form action="book" class="login_form" method="POST">
+             {% csrf_token%}
+      <input type="text"  name="name" placeholder="Enter Your Full name"/>
+      <input type="number"  name="phone" placeholder="Contact Number"/>
+      <input type="email" name="email" placeholder="Email.ID"/>
+      <input type="text"  name="address" placeholder="Address"/>
+
+      <input type="number" name="item_id" placeholder="Items ID"/>
+
+      <input type="text"  name="item_name" placeholder="Items Name"/>
+
+      <<input  type="submit"  value="submit">
+      <p class="message"> we will contact you within one hour!</p>
+      <p class="message"> Have a nice day</p>
+    </form>
+  </div>
+</div>
+  <script src="{% static '/jss/book.js' %}"></script>

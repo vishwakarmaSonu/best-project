@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/login.css' %}">
+
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a href="{% url 'login' %}">
+    <h2 class="inactive underlineHover"> Sign In </h2> </a>
+    <h2 class="active ">Sign Up </h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h4> Vishwakarma Arts</h4>
+    </div>
+
+    <!-- Login Form -->
+    <form action="singup" method="POST">
+      {%csrf_token%}
+      <input type="text"  class="fadeIn second" name="username" placeholder="Username">
+      <input type="text" class="fadeIn second" name="first_name" placeholder="First Name">
+      <input type="text" class="fadeIn second" name="last_name" placeholder="Last Name">
+      <input type="text"  class="fadeIn third" name="email_ID" placeholder="Email.ID">
+
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
+      <div></div>
+      <input type="submit" class="fadeIn fourth" value="Submit">
+
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+       <h5 class="underlineHover"  >Please remembar password</h5>
+
+    </div>
+
+  </div>
+</div>
+</body>
+  <script src="{% static '/jss/login.js' %}"></script>
+</html>

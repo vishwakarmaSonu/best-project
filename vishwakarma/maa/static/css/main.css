@@ -1,0 +1,127 @@
+/* CSS DOCUMENT */
+
+/* DEFAULT SETTINGS */
+/*---------------------------------*/
+body, h1, h2, h3, p, img, a, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* BODY */
+/*---------------------------------*/
+body {
+	background: #ccc;
+}
+
+
+
+/* HEADER */
+/*---------------------------------*/
+header {
+	background: #292929;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+#navMain {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#navMain ul {
+	height: 75px;
+	line-height: 75px;
+}
+
+#navMain li {
+	float: left;
+	padding: 0 30px;
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	font: 1em/75px sans-serif;
+}
+
+.selection {
+	border-bottom: solid 5px #FF4B40;
+	height: 70px;
+}
+
+#navMain li:hover {
+	background: #212121;
+	border-bottom: solid 5px #C43A31;
+	height: 70px;
+}
+
+
+
+
+/* SECTION */
+/*---------------------------------*/
+section {
+	background: #ebebeb;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	text-align: center;
+}
+
+#profile {
+	background: #ebebeb url(http://images4.fanpop.com/image/photos/19900000/SunSet-sunsets-and-sunrises-19955133-1920-1080.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+
+section img {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+	margin-top: 20px;
+}
+
+button {
+	margin: 15px;
+	background: none;
+	border: solid 5px #000;
+	padding: 10px 25px;
+	font: 900 1em/1em sans-serif;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #00E3AC;
+	border: solid 5px #00E3AC;
+	color: #fff;
+}
+
+section h1, p {
+	text-align: left;
+	margin: 10px 20%;
+	color: #212121;
+}
+
+section h1 {
+	font: 800 2em/1em sans-serif;
+	margin-top: 50px;
+}
+
+section p {
+	font: 1em/1em sans-serif;
+	font-style: italic;
+	padding-bottom: 50px;
+}
+div h1{
+color:red;
+text-align: center;
+}
